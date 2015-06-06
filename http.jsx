@@ -30,7 +30,7 @@ var $http = (function() {
 
 		var method = config.method || 'GET';
 
-		var request = method + ' ' + url.path + " HTTP/1.1\r\nConnection: close\r\nHost: " + url.host;
+		var request = method + ' ' + url.path + " HTTP/1.0\r\nConnection: close\r\nHost: " + url.host;
 		var header;
 
 		if(config.payload) {
